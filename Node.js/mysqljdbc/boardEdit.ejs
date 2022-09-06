@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>글 수정하기</title>
+    <script src="//cdn.ckeditor.com/4.19.1/full/ckeditor.js"></script>
+</head>
+<body>
+    <h1>글수정하기</h1>
+    <from method="post" action="/boardEditOk" onsubmit="boardChk()">
+        <label>제목 : </label>
+        <input type="text" name="subject" id="subject"/><br/>
+        <label>글내용 : </label>
+        <textarea name="content" id="content"></textarea><br/>
+        <script>
+            CKEDITOR.replace("content");
+
+        </script>
+        <input type="submit" value="글수정하기"/>
+    </from>
+</body>
+</html>
