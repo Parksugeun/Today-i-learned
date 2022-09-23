@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	#content{
+		width:100px;
+		background-color:#ddd;
+		margin:0 auto;
+		float:left;
+		
+	}
+	#content>img{
+		width:100%;
+		float:left;
+		text-align:left;
+	}
+
+</style>
+<script>
+var step=5;
+var left=0;
+function moveImage(){
+	
+	var img = document.getElementById("content").style;
+	left = left + step;
+	img.left = left+"px";
+	if(left>500){
+		step = -5;
+	}
+	if(left<0){
+		step = 5;
+	}
+}
+var interval;
+
+//background
+var y=0;
+function backMove(){
+	y += 5;
+	document.getElementById("b").style.backgroundPosition = "0px"+y+"px";
+	
+}
+</script>
+</head>
+<body onload="interval = setInterval('moveImage()',500); setInterval('setTimer()', 1000); setInterval('backMove()', 200)" id="b">
+<div class= "slideMovie" id="content" onmouseover="clearInterval(timer);" onmouseout="timer = setInterval('moveScroll()', 500)" >
+	
+	<script>
+	for(var i=1; i<=9; i++){
+		document.write("<img src='../img/m0"+i+".png'/>");
+		
+	}
+	for(var i=10; i<=29; i++){
+		document.write("<img src='../img/m"+i+".png'/>");	
+	}
+	</script>
+	
+</div>
+</body>
+</html>
