@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LOGIN</title>
+</head>
+<style>
+
+body{
+    background-color:white;
+    
+}
+.select{
+   	 
+    margin-left:10%;
+ 	text-align:center;
+}
+.login{
+    width:350px;
+    height:50px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.form-control{
+	width:350px;
+    height:50px;
+	font-size:25px;
+	
+}
+.button{
+    background-color:#0388fc;
+    width:350px;
+    height:50px;
+    margin-left:auto;
+    margin-right:auto;
+    color:white;
+}
+
+.check{
+    display:flex;
+    flex-direction:row;
+ 	justify-content:center;
+  
+}
+.find{
+    font-weight:800;
+}
+.btn.btn-primary.btn-lg{
+    border:1px solid #03c75b;
+    background-color:white;
+    color:black;
+    font-size:80%;
+    width:170px;
+}
+
+
+.login-button{
+    text-align:center;
+}
+.banner{
+    text-align:center;
+   
+}
+.footer{
+    margin:0 auto;
+    text-align:center;
+    bottom:5px;
+    color:gray;
+}
+img{
+    margin-top:50px;
+    width:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+<body>
+	<header>
+		 <div class="logo">
+	        <img src="../img/daum.jpg">
+	   	 </div>
+	    <br><br>
+   	</header>
+    <form>
+	    <div class="select">
+			<select class="select-login">
+		            <option>다른방법으로 로그인</option>
+			</select>
+		</div>
+	        <div class="login">
+	          	<input type="email" class="form-control" id="userId"  placeholder="아이디" size="45"  >
+	        </div>
+
+		        <div class="login">
+		          	<input type="password" class="form-control" id="userPassword" placeholder="비밀번호" size="45">
+		        </div>
+
+			        <div class="login-button">
+			        <div button type="login" class="button"><h1>로그인</h1>
+			        </div>
+			         <div class="check">
+	        <div>
+	            <input type="checkbox" class="check-input" id="check">
+	        <label class="check-label" for="check">로그인 상태 유지  </label> 
+	     
+	  			
+	        </div>
+   		</div>
+	   
+	    </div>
+        
+      </form>
+
+    <hr width="350px" align="center">
+    <p class="find" align="center">아이디 찾기 | 비밀번호 찾기</p>
+
+    <br>
+
+   
+    <div class="banner">
+    	<img src="../img/kakao.jpg">
+    </div>
+   
+</div>
+<br><br>
+    <footer class="footer">
+        <div class="footer-informaion">
+            © Kakao Corp.  | 고객센터 
+        </div>
+    </footer>
+</body>
+</html>
