@@ -25,3 +25,5 @@ TIL(Today i learned)을 개편하기로 했다.
 * Jquery
 
 * 팀 프로젝트
+  
+  * 플로깅 웹사이트
