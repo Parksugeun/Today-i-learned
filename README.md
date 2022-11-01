@@ -8,6 +8,8 @@ TIL(Today i learned)을 개편하기로 했다.
 
 좀 더 체계적으로 그리고 보기 쉽도록 작성해야 겠다.
 
+싸피 준비 잘 해보자 
+
 * JAVA
 
 * Node.js
