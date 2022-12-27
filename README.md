@@ -10,11 +10,14 @@ TIL(Today i learned)을 개편하기로 했다.
 
 CS 공부도 꾸준히 해야한다.
 
+
+
+
 * JAVA
 
 * Node.js
 
-* Javascrit
+* JavaScrit
 
 * JSP
 
