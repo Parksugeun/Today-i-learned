@@ -19,7 +19,7 @@ CS 공부도 꾸준히 해야한다.
 
 * Node.js
 
-* JavaScrit
+* JavaScript
 
 * JSP
 
