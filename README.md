@@ -12,30 +12,29 @@ CS 공부도 꾸준히 해야한다.
 
 인프런 강의
 
+원서지원
+
+- JAVA
+
+- Node.js
+
+- JavaScript
+
+- JSP
+
+- ajax
+
+- React.js
+
+- html/css
+
+- Jquery
+
+- 알고리즘
+
+- 팀 프로젝트
+
+  - 플로깅 웹사이트 Frogging
+  - 메뉴추천 웹사이트 MOME
 
 
-
-* JAVA
-
-* Node.js
-
-* JavaScript
-
-* JSP
-
-* ajax
-
-* React.js
-
-* html/css
-
-* Jquery
-
-* 알고리즘
-
-* 팀 프로젝트
-  
-  * 플로깅 웹사이트 Frogging
-  * 메뉴추천 웹사이트 MOME
-
-  
