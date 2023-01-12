@@ -63,8 +63,16 @@ const counterMaker = function () {
     sec: document.getElementById("sec"),
   };
 
+  const timeKeys = Object.keys(remainingObj);
+  const docKeys = Object.keys(documentObj);
+
+  for (let i = 0; i < timeKeys.length; i = i + 1) {
+    documentObj[docKeys[i]].textContent = remainingObj[timeKeys[i]];
+  }
+  /*
   documentObj["days"].textContent = remainingObj["remainingDate"];
   documentObj["hours"].textContent = remainingObj["remainingHours"];
   documentObj["min"].textContent = remainingObj["remainingMin"];
   documentObj["sec"].textContent = remainingObj["remainingSec"];
+  */
 };
