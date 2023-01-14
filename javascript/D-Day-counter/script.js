@@ -14,10 +14,9 @@ const dateFormMaker = function () {
   const dateFormat = `${inputYear}-${inputMonth}-${inputDate}`; // ` 백틱에서는 문자열안에서 바로 변수 데이터를 만들 수 있다.
   return dateFormat;
 };
-const counterMaker = function () {
-  const targetDateInput = dateFormMaker();
+const counterMaker = function (data) {
   const nowDate = new Date();
-  const targetDate = new Date(targetDateInput).setHours(0, 0, 0, 0);
+  const targetDate = new Date(data).setHours(0, 0, 0, 0);
   const remaining = (targetDate - nowDate) / 1000;
   // 수도코드(한글로 코드를 작성하는 것)
 
@@ -48,25 +47,44 @@ const counterMaker = function () {
   const timeKeys = Object.keys(remainingObj);
   // timeKeys는 배열이고 ['remainingDate', remaingHours, ... 가 들어있음]
 
+  const format = function (time) {
+    if (time < 10) {
+      return "0" + time;
+    } else {
+      return time;
+    }
+  };
+
   let i = 0;
   for (let tag of documentArr) {
-    document.getElementById(tag).textContent = remainingObj[timeKeys];
+    const remainingTime = format(remainingObj[timeKeys[i]]);
+    console.log(remainingTime);
+    document.getElementById(tag).textContent = remainingTime;
     i++;
   }
 };
 
 const starter = function () {
+  const targetDateInput = dateFormMaker();
   container.style.display = "flex";
   messageContainer.style.display = "none";
-  counterMaker();
-  const intervalId = setInterval(counterMaker, 1000);
+  setClearInterval();
+  counterMaker(targetDateInput);
+  const intervalId = setInterval(() => {
+    counterMaker(targetDateInput);
+  }, 1000);
   intervalIdArr.push(intervalId);
 };
 
 const setClearInterval = function () {
-  container.style.display = "none";
-  messageContainer.innerHTML = "<h3>D-Day를 입력해 주세요.</h3>";
   for (let i = 0; i < intervalIdArr.length; i++) {
     clearInterval(intervalIdArr[i]);
   }
+};
+
+const resetTimer = function () {
+  container.style.display = "none";
+  messageContainer.innerHTML = "<h3>D-Day를 입력해 주세요.</h3>";
+  messageContainer.style.display = "flex";
+  setClearInterval();
 };
