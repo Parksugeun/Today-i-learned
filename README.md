@@ -30,7 +30,7 @@ CS 공부도 꾸준히 해야한다.
 
 - html/css
 
-- Jquery
+- jQuery
 
 - 알고리즘
 
