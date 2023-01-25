@@ -166,3 +166,33 @@ falsy한 데이터: undefined, null, 0, ''(공백), NaN
 localStorage.setItem: 로컬 스토리지에 데이터를 저장
 localStorage.getItem: 로컬 스토리지에 저장된 데이터 불러오기
 localStorage.removeItem: 로컬 스토리지에 저장된 데이터 제거
+
+<ul>: Unordered List 순서가 없는 리스트
+<ol>: Ordered List 순서가 있는 리스트
+
+Dom(Document Object Model): 브라우저가 HTML 문서를 파싱하는 과정에서 생겨나는 객체
+
+document.createElement: 태그 생성
+appendChild():태그 추가
+document.querySelectorAll: 해당하는 태그를 모두 가져옴
+.contains : 불리는 값으로 리턴해줌 포함하면 true 포함하지 않으면 false
+
+스코프(scope): 변수참조의 유효범위
+전역 스코프(global scope): 전역스코프에서 선언된 함수는 지역스코프에서 참조가 가능하다
+지역 스코프(local scope): 함수 내부, 지역스코프에서 선언된 함수는 밖에서 참조 불가능
+함수레벨 스코프: 선언된 함수 내부에 스코프를 의미, var키워드 외부에서 참조가 불가능
+블록레벨 스코프: 중괄호를 사용하는 코드들 - if문 for반복문은 var키워드는 외부에서 정상적으로 참조가 된다.
+
+JSON: 문자형 데이터 포맷, 배열이나 객체를 문자로 변환할 때 사용, 다시 원본형태로 변환도 가능하다.
+typeof: 확인하고싶은 데이터 앞에 사용
+
+호이스팅(hoisting): 함수 안에 있는 선언들을 모두 끌어올려서 해당 함수 유효 범위의 최상단에 선언하는 것
+함수 표현식에서는 정의되기 이전에 호출되면 에러가 발생한다.
+함수 선언식에서는 호이스팅이 되어 위로 끌어올려진다.
+
+TDZ(Temporal Dead Zone) : 스코프의 시작 지점부터 초기화 시작 지점까지의 구간으로 TDZ은 let, const, class 구문의 유효성을 관리한다.
+선언 단계: 선언한 변수는 식별자가 담기는 객체를 할당하는 단계
+초기화 단계: 변수에 할당할 메모리 공간을 부여하는 단계
+할당 단계: 정의된 변수에 데이터가 할당되는 단계
+
+조건 (삼항) 연산자는 JavaScript에서 세 개의 피연산자를 받는 유일한 연산자, 앞에서부터 조건문, 물음표(?), 조건문이 참(truthy)일 경우 실행할 표현식, 콜론(:), 조건문이 거짓(falsy)일 경우 실행할 표현식이 배치. 해당 연산자는 if...else문의 대체재로 사용
