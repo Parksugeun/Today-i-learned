@@ -163,19 +163,27 @@ Local Storage: ket-value 형태 저장, 로컬 환경에 데이터 저장
 브라우저 자체를 종료해도 존재
 falsy한 데이터: undefined, null, 0, ''(공백), NaN
 이외의 데이터는 truthy한 데이터
+
 localStorage.setItem: 로컬 스토리지에 데이터를 저장
+
 localStorage.getItem: 로컬 스토리지에 저장된 데이터 불러오기
+
 localStorage.removeItem: 로컬 스토리지에 저장된 데이터 제거
 
 <ul>: Unordered List 순서가 없는 리스트
 <ol>: Ordered List 순서가 있는 리스트
 
-Dom(Document Object Model): 브라우저가 HTML 문서를 파싱하는 과정에서 생겨나는 객체
+Dom(Document Object Model): 브라우저가 HTML 문서를 파싱하는 과정에서 생겨나는 객체(트리구조)
 
 document.createElement: 태그 생성
+
 appendChild():태그 추가
+
 document.querySelectorAll: 해당하는 태그를 모두 가져옴
+
 .contains : 불리는 값으로 리턴해줌 포함하면 true 포함하지 않으면 false
+
+.trim(): 공백제거(공백체크)
 
 스코프(scope): 변수참조의 유효범위
 전역 스코프(global scope): 전역스코프에서 선언된 함수는 지역스코프에서 참조가 가능하다
@@ -186,13 +194,73 @@ document.querySelectorAll: 해당하는 태그를 모두 가져옴
 JSON: 문자형 데이터 포맷, 배열이나 객체를 문자로 변환할 때 사용, 다시 원본형태로 변환도 가능하다.
 typeof: 확인하고싶은 데이터 앞에 사용
 
-호이스팅(hoisting): 함수 안에 있는 선언들을 모두 끌어올려서 해당 함수 유효 범위의 최상단에 선언하는 것
+호이스팅(hoisting): 함수 안에 있는 선언들을 모두 끌어올려서 해당
+함수 유효 범위의 최상단에 선언하는 것
+
 함수 표현식에서는 정의되기 이전에 호출되면 에러가 발생한다.
+
 함수 선언식에서는 호이스팅이 되어 위로 끌어올려진다.
 
 TDZ(Temporal Dead Zone) : 스코프의 시작 지점부터 초기화 시작 지점까지의 구간으로 TDZ은 let, const, class 구문의 유효성을 관리한다.
+
 선언 단계: 선언한 변수는 식별자가 담기는 객체를 할당하는 단계
+
 초기화 단계: 변수에 할당할 메모리 공간을 부여하는 단계
+
 할당 단계: 정의된 변수에 데이터가 할당되는 단계
 
 조건 (삼항) 연산자는 JavaScript에서 세 개의 피연산자를 받는 유일한 연산자, 앞에서부터 조건문, 물음표(?), 조건문이 참(truthy)일 경우 실행할 표현식, 콜론(:), 조건문이 거짓(falsy)일 경우 실행할 표현식이 배치. 해당 연산자는 if...else문의 대체재로 사용
+
+API: 어떠한 프로그램에서 제공하는 기능을 사용자가 활용할 수 있도록 만들어 둔 인터페이스
+
+Geolocation API : 위치정보를 가져올 수 있는 API
+
+OpenWeatherMap API: 날씨정보를 가져올 수 있는 API
+
+HTTP(Hypertext Transfer Protocol): 서버와 클라이언트가 통신하기 위해 정의된 규약
+스테이터스코드: 번호로 상태를 나타냄 200 : 응답이 잘 됌
+
+---ㅌ
+
+- GET: 서버의 데이터를 조회하는 Method
+- POST: 서버에 데이터를 등록하는 Method
+- PUT: 서버 내 데이터를 수정하는 Method
+- PATCH: 데이터를 일부 수정하는 Method
+- DELETE: 서버의 데이터를 삭제하는 Method
+- OPTIONS: 서버가 허용하는 Method를 확인하기 위한 Method
+
+동기: 서버 요청을 받았을 떄 응답을 받아야 다음 동작을 할 수 있다.(응답 못할시 대기)
+
+비동기: 서버에 요청을 보냈을 떄 응답여부와 상관없이 다음작업을 할 수 있다.
+
+stack: LIFO(Last In First Out)
+
+queue FIFO(First In First Out)
+
+call stack :
+
+callback queue
+
+Promise의 3가지 상태
+
+1. fulfilled: 요청이 성공한 상태
+2. pending: 요청에 대한 응답을 기다리고 있는 상태
+3. rejected: 요청이 실패한 상태
+
+구조분해할당: 구조화 되어 있는 배열, 객체와 같은 데이터를 분해시켜, 각각의 변수에 담는 것
+
+- 구조분해할당을 할 경우 코드를 좀 더 간소화 할 수 있다.
+
+spread연산자(...): 하나로 뭉쳐잇는 값들의 집합을 전개해주는 연산자(배열의 대괄호를 벗겨줌)
+
+객체는 또다른 임시 메모리에 저장되어 있다. 그리고 그 사이에 하나의 메모리가 더 존재하는데 이에는 임시메모리의 주소가 저장되어 있다.
+
+얕은 복사: 주소값까지만 복사하는 얕은 복사
+
+깊은 복사: 실제 데이터까지 복사하는 깊은 복사
+
+JSON.stringify( )는 자바스크립트의 값을 JSON 문자열로 변환한다.
+
+JSON.parse()는 JSON을 객체로 변환해 준다.
+
+Rest Parameter(...rest(rest는 변수명)): 객체가 존재할 경우 필요한 데이터만 뽑아서 새로운 변수에 담아서 객체로 이용할 수 있다.
