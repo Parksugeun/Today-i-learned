@@ -1,6 +1,6 @@
 # TIL
 
-TIL(Today i learned)을 개편하기로 했다.
+TIL(Today i learned)을 개편
 
 이전에는 단순히 그날 배웠던 것을 날짜별로 기록하기에 급급했다.
 
