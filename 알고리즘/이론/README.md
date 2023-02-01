@@ -16,3 +16,13 @@ Iterator: Iterator란 자바의 컬렉션(Collection)에 저장되어 있는 요
 
 - 정의방법은 Iterator<T> iterator = Collection.iterator();
 - 메서드는 다음 요소가 있는지 판단하는 hasNext(), 다음 요소를 가져오는 next(), 가져온 요소를 삭제하는 remove()
+
+
+
+## **HashMap이란?**
+
+HashMap은 Map인터페이스에 속해있는 컬렉션
+
+Map 인터페이스의 기본 기능들을 전부 구현할 수 있다
+
+데이터들은 모두 (키, 값)의 1:1 구조로 되어있는 Entry로 되어있다.
