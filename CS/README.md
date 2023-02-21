@@ -10,7 +10,6 @@ CS
 - OOP는 현실 세계를 프로그래밍으로 옮겨와 현실 세계의 사물들을 객체로 보고, 그 객체로부터 개발하고자 하는 특징과 기능을 뽑아와 프로그래밍하는 기법(OOP로 코드를 작성할 시 재사용성과 변형가능성을 높일 수 있음)
 
 - OOP 5가지 설계 원칙
-
 1. SRP(단일 책임 원칙 Single Responsibility Principle) : 클래스는 단 하나의 목적을 가져야 하며, 클래스를 변경하는 이유는 단 하나의 이유여야 한다.
 2. OCP(개방 폐쇠 원칙 Open-Closed Principle) : 클래스는 확장에는 열려 있고 변경에는 닫혀 있어야 한다.
 3. LSP(리스코프 치환 원칙 Liskov Substitutuon Principle) : 상위 타입의 객체를 하위 타입으로 바꾸어도 프로그램은 일관되게 동작해야 한다.
@@ -24,3 +23,23 @@ HTTP 통신에서 어떤 차원에 대한 CRUD 요청을 Resource와 Method로 �
 1. Resource(자원, URI) URI는 특정 리소스를 식별하는 통합 자원 식별자(Uniform Resource Identifier)를 의미한다. 웹 기술에서 사용하는 논리적 또는 물리적 리소스를 식별하는 고유한 문자열 시퀀스다.
 2. Method(요청방식, GET 또는 POST등)
 3. Representation of Resource(자원의 형태, JSON or XML 등)
+
+
+
+
+
+
+
+# HTTP
+
+- 웹 브라우저가 웹 서버에 요청하는 프로토콜
+
+- HTTPS 는 모든 통신 내용을 암호화 함
+
+
+
+# DOM
+
+- Document object model로 HTML문서를 기반으로 큰 오브젝트를 만드는데 트리구조와 비슷하다.
+
+- Virtual DOM: 브라우저가 렌더링하는 일련의 과정을 반복하는 것을 개선한 것
