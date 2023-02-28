@@ -5,13 +5,13 @@ public class Main {
 		
 		Scanner in = new Scanner(System.in);
  
-		int T = in.nextInt();	// 테스트 케이스
+		int T = in.nextInt();	
  
  
 		for(int i = 0; i < T; i++) {
 			
 			int H = in.nextInt();
-			int W = in.nextInt(); 	// 쓸모없는 변수다.
+			int W = in.nextInt(); 	
 			int N = in.nextInt();
 			
 			if(N % H == 0) {
