@@ -2,7 +2,7 @@ package 백준.자료구조;
 
 import java.util.Scanner;
  
-public class B11720 {
+public class B11720_숫자의합 {
 	public static void main(String[] args) {		
         Scanner sc = new Scanner(System.in);
         
