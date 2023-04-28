@@ -1,6 +1,7 @@
 # 자주 사용되는 Java API
 
 ## 배열과 리스트
+
 ### 배열 정렬
 - Arrays.sort(T[] a) : 배열 a를 오름차순으로 정렬한다.
 - Arrays.sort(T[] a, Comparator<? super T> c) : 배열 a를 Comparator c를 이용하여 정렬한다.
