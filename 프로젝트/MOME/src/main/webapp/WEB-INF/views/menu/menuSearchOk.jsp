@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
+
 <style>
 
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
@@ -26,7 +30,7 @@ a{
 h1 {
   text-align: left;
   color: #a8a8a8;
-  font-family: 'Merriweather', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   text-align: center;
 }
 
@@ -77,14 +81,12 @@ form textarea {
 }
 
 .mome-bottom {
-margin-bottom: 1em;
-width:100%;
-}
-.mome-bottom {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  margin-bottom: 1em;
+  width:100%;
 }
 
 .card-col {
@@ -94,7 +96,6 @@ width:100%;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: 0.3s;
-  font-family: sans-serif;
 }
 
 .card-col:hover {
@@ -113,6 +114,7 @@ width:100%;
 
 .card_bottom {
   padding: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .card_bottom h3 {
@@ -128,27 +130,30 @@ width:100%;
 }
 .menu-s{
 	margin: 10px;
+	font-family: 'Noto Sans', sans-serif;
+}
+.return-btn{
+	text-align: center;
+	font-size: 16px;
+	background: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+  	border: none;
+  	border-radius: 4px;
+	margin: 0 auto;
+	width: 10%;
+	height: 50px;
+	font-weight: bold;
+	font-family: 'Noto Sans KR', sans-serif;
+	
 }	
 </style>
 
 <script>
 </script>
 
-<!--  
-<form class="cf">
-<h1>모메 메뉴추천</h1>
-  <div class="half left cf">
-  	<input type="input" id="input-subject" placeholder="가계명: 슈아브">
-    <input type="input" id="input-name" placeholder="메뉴: 마카롱">
-    <input type="input" id="input-email" placeholder="카테고리: 디저트">
-    <input type="input" id="input-subject" placeholder="위치: 서울 마포구 월드컵북로5가길 17 1층 ">
-    <input type="input" id="input-subject" placeholder="함께하면 좋을 사람들: #친구 #연인">
-  </div>
-  <div class="half right cf">
-    <img src="https://img.daily.co.kr/@files/www.daily.co.kr/content/food/2020/20200309/1738fceeeb9de07224e2c1704993f456.jpg" style="width:550px; border-radius:20px;" />
-  </div>  
-</form>
--->
 	<div class="menu-s"><h1>모메 메뉴추천</h1></div>
 	
 	<div class="mome-bottom">
@@ -168,4 +173,5 @@ width:100%;
 		</c:forEach>
 
 	</div>
+	<div class="return-btn" onClick="location.href='/menu/menuRecommandation'">뒤로가기</div>
 
