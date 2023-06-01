@@ -35,6 +35,8 @@ AI 역량검사 및 파이썬코딩테스트 준비
 - JSP
 
 - MySQL
+  
+  - SQLD 준비
 
 - ajax
 
